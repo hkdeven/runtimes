@@ -166,11 +166,13 @@ We're now going to update your local code to point to this database. We'll creat
   ```
   {: codeblock}
 
-2. In your browser, go to {{site.data.keyword.Bluemix_notm}} and select **Apps > _your app_ > Connections > Cloudant > View Credentials**.
+2. In your browser, go to {{site.data.keyword.Bluemix_notm}} and select **Apps > _your app_ > Connections > Cloudant > Service credentials**.
 
-3. Copy and paste just the `url` from the credentials to the `url` field of the `vcap-local.json` file, replacing **CLOUDANT_DATABASE_URL**.
+3. First, create your credentials by clicking the **New Credentials** button, then select the *View Credentials* dropdown under the Actions column.
 
-4. Run your application locally.
+4. Copy and paste just the `url` from the credentials to the `url` field of the `vcap-local.json` file, replacing **CLOUDANT_DATABASE_URL**.
+
+5. Run your application locally.
   ```
 npm start  
   ```
